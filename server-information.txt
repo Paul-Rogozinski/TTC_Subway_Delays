@@ -1,0 +1,12 @@
+Server location: http://student.sinseer.com/
+
+ftp address: ftp://student.sinseer.com/
+- You may need to set PASV mode in your settings
+
+
+username: student
+password: sent via whatsapp
+
+
+All files for the website must go in the directory 'public_html'
+
