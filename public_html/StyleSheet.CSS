@@ -1,0 +1,12 @@
+body
+{
+
+}
+
+img
+{
+	display: inline-block;
+	vertical-align: middle;
+	max-height: auto;
+	max-width: 100%; 
+}
