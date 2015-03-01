@@ -1,0 +1,5 @@
+CREATE TABLE `line_details` (
+  `Line_ID` int(11) NOT NULL AUTO_INCREMENT,
+  `Line_Name` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`Line_ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
