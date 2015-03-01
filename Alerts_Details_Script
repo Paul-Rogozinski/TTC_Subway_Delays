@@ -1,9 +1,7 @@
 CREATE TABLE `alerts_details` (
   `Alert_ID` int(11) NOT NULL AUTO_INCREMENT,
-  `Station_ID` int(11) DEFAULT NULL,
-  `Alerts` longtext,
-  `Time_of_Alert_Posted` datetime DEFAULT NULL,
-  PRIMARY KEY (`Alert_ID`),
-  KEY `Station_ID_FK_idx` (`Station_ID`),
-  CONSTRAINT `Station_ID_FK` FOREIGN KEY (`Station_ID`) REFERENCES `station_details` (`Station_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  `Station_ID` int(11) NOT NULL,
+  `Alerts` longtext NOT NULL,
+  `Time_of_Alert_Posted` datetime NOT NULL,
+  PRIMARY KEY (`Alert_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
