@@ -1,10 +1,9 @@
 CREATE TABLE `station_details` (
   `Station_ID` int(11) NOT NULL AUTO_INCREMENT,
-  `Station_Name` varchar(45) DEFAULT NULL,
-  `Station_Address` varchar(255) DEFAULT NULL,
-  `Indicator_Status` tinyint(1) DEFAULT NULL,
-  `Line_ID` int(11) DEFAULT NULL,
+  `Station_Name` varchar(45) NOT NULL,
+  `Station_Address` varchar(255) NOT NULL,
+  `Indicator_Status` tinyint(1) NOT NULL DEFAULT '0',
+  `Line_ID` int(11) NOT NULL,
   PRIMARY KEY (`Station_ID`),
-  KEY `Line_ID_FK_idx` (`Line_ID`),
-  CONSTRAINT `Line_ID_FK` FOREIGN KEY (`Line_ID`) REFERENCES `line_details` (`Line_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  KEY `Line_ID_FK_idx` (`Line_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
