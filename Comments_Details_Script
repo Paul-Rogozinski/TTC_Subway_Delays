@@ -1,9 +1,7 @@
 CREATE TABLE `comments_details` (
   `Comment_ID` int(11) NOT NULL AUTO_INCREMENT,
-  `Alert_ID` int(11) DEFAULT NULL,
-  `Comments` longtext,
-  `Time_of_Comment_Posted` datetime DEFAULT NULL,
-  PRIMARY KEY (`Comment_ID`),
-  KEY `Alert_ID_FK_idx` (`Alert_ID`),
-  CONSTRAINT `Alert_ID_FK` FOREIGN KEY (`Alert_ID`) REFERENCES `alerts_details` (`Alert_ID`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  `Alert_ID` int(11) NOT NULL,
+  `Comments` longtext NOT NULL,
+  `Time_of_Comment_Posted` datetime NOT NULL,
+  PRIMARY KEY (`Comment_ID`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
