@@ -1,0 +1,13 @@
+The image below shows the glimpse of TTC subway map.
+
+•	The subway map contains four different lines:
+1.	Yonge-University-Spadina
+2.	Bloor-Danforth
+3.	Scarborough RT
+4.	Sheppard
+•	The stations are labelled along their respective lines in the map.
+•	The user can view station details such as station name and station address by clicking on each station.
+•	When an alert is posted, an indicator appears on that station.
+•	By clicking on that indicator, the user can view the alerts for that particular station.
+•	By clicking on that particular alert, the user can access the comments related to that alert.
+•	User can zoom in and zoom out the subway map.
