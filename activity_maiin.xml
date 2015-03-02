@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <Button
+        android:id="@id/button1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/transparent"
+        android:capitalize="words"
+        android:drawableLeft="@drawable/ttc_main"
+        android:gravity="left|center_vertical"
+        android:text=" TTC Subway"
+        android:textAllCaps="false"
+        android:textColor="#F00"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button3"
+        android:drawableLeft="@drawable/station_menu"
+         android:background="@android:color/transparent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button2"
+        android:layout_centerVertical="true"
+        android:text="Station List" />
+
+    <Button
+        android:id="@+id/button4"
+        android:drawableLeft="@drawable/settings_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:background="@android:color/transparent"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:layout_marginTop="40dp"
+        android:text="Settings" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:background="@android:color/transparent"
+        android:layout_alignLeft="@+id/button4"
+        android:drawableLeft="@drawable/about_menu"
+        android:layout_below="@+id/button4"
+        android:layout_marginTop="51dp"
+        android:text="About" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button3"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="52dp"
+        android:layout_marginLeft="28dp"
+        android:background="@android:color/transparent"
+        android:drawableLeft="@drawable/subway_menu"
+        android:text="Subway Map" />
+
+</RelativeLayout>
