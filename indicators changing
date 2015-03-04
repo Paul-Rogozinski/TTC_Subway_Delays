@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="MapIndicator()"></p>
+
+<script>
+var AlertIndicator= "0";
+
+function FunctionAlert() 
+{
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "Alert.jpg");
+    x.setAttribute("width", "304");
+    x.setAttribute("width", "228");
+    x.setAttribute("alt", "Alert");
+    document.body.appendChild(x);
+}
+
+function FunctionIndicator() 
+{
+    var x = document.createElement("IMG");
+    x.setAttribute("src", "Indicator.jpg");
+    x.setAttribute("width", "304");
+    x.setAttribute("width", "228");
+    x.setAttribute("alt", "Indicator");
+    document.body.appendChild(x);
+}
+
+if (AlertIndicator== 1) 
+{
+    document.getElementById("MapIndicator").innerHTML = FunctionAlert();
+}
+else 
+{
+    document.getElementById("MapIndicator").innerHTML = FunctionIndicator();
+}
+</script>
+
+</body>
