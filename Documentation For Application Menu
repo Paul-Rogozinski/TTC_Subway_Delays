@@ -1,0 +1,11 @@
+The application menu is how the user will navigate to different areas of the application. 
+The menu consists of a 4 main buttons: 
+•	Subway Map
+•	Station List
+•	Settings
+•	About Us
+Each button will bring the user to another screen within the application specified for what was chosen. 
+The Subway Map button allows a view of the whole subway map as an image. 
+The Station List button will display the full list of subway stations available from TTC. 
+The Settings button illustrates settings for the application to allow custom alerts. 
+The About Us button provides information about the developer team projects, products and how to contact support. 
