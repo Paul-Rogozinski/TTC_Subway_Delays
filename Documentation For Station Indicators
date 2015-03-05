@@ -1,7 +1,0 @@
-Each station has its own indicator to indicate whether there is any alert posted.
-There will be one of two indicators shown on the subway map screen depending on its state.
-A white ring indicator present over the station indicates there is no alert posted at that specific station.
-Clicking a white ring indicator brings the user to a new screen where they can post an alert for that station.
-A red indicator with a white exclamation mark present over the station indicates there is an alert posted at that specific station.
-Clicking a red alert indicator brings the user to a new screen where alert details are displayed for that station.
-By default all stations will display a white ring indicator, however the indicator will change to red with a white exclamation mark once an alert has been posted by a user. 
