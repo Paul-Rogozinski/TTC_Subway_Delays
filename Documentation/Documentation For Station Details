@@ -1,0 +1,9 @@
+The Station Details screen has two different layouts depending on its state.
+The first layout will display when there are no alerts posted. 
+In this layout, the user can post an alert for the chosen station by typing in the text box and clicking the “Post” button.
+The second layout will display if there has already been an alert posted.
+In this layout, users can view the alert information for the chosen station. 
+To edit an alert post, the publisher of the alert must click the “EDIT” button
+To delete an alert post, the publisher of the alert must click the “DELETE” button
+There is a news feed for the alert post in which additional details may be displayed to the user. 
+Users can choose to post in the feed by entering information in the text box and clicking the “POST FEED” button.
