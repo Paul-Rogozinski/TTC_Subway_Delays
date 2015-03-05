@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<body>
+<img src="SubwayMap.png" width="5940" height="2352" alt=" Subway Map " usemap="#subwaymap">
+
+//href for database is needed to complete
+<map name=" subwaymap ">
+
+<area shape="circle" coords="0,0,1" alt="Bathurst 	     “ href=“	Bathurst 	">
+<area shape="circle" coords="0,0,1" alt="Bay		     “ href=“	Bay	">
+<area shape="circle" coords="0,0,1" alt="Bayview 	     “ href=“	Bayview 	">
+<area shape="circle" coords="0,0,1" alt="Bessarion 	     “ href=“	Bessarion 	">
+<area shape="circle" coords="0,0,1" alt="Bloor-Yonge 	     “ href=“	Bloor-Yonge 	">
+<area shape="circle" coords="0,0,1" alt="Broadview 	     “ href=“	Broadview 	">
+<area shape="circle" coords="0,0,1" alt="Castle Frank	     “ href=“	Castle Frank	">
+<area shape="circle" coords="0,0,1" alt="Chester	     “ href=“	Chester	">
+<area shape="circle" coords="0,0,1" alt="Christie	     “ href=“	Christie	">
+<area shape="circle" coords="0,0,1" alt="College	     “ href=“	College	">
+<area shape="circle" coords="0,0,1" alt="Coxwell	     “ href=“	Coxwell	">
+<area shape="circle" coords="0,0,1" alt="Davisville 	     “ href=“	Davisville 	">
+<area shape="circle" coords="0,0,1" alt="Don Mills 	     “ href=“	Don Mills 	">
+<area shape="circle" coords="0,0,1" alt="Donlands	     “ href=“	Donlands	">
+<area shape="circle" coords="0,0,1" alt="Downsview 	     “ href=“	Downsview 	">
+<area shape="circle" coords="0,0,1" alt="Dufferin 	     “ href=“	Dufferin 	">
+<area shape="circle" coords="0,0,1" alt="Dundas 	     “ href=“	Dundas 	">
+<area shape="circle" coords="0,0,1" alt="Dundas West 	     “ href=“	Dundas West 	">
+<area shape="circle" coords="0,0,1" alt="Dupont	     “ href=“	Dupont	">
+<area shape="circle" coords="0,0,1" alt="Eglinton 	     “ href=“	Eglinton 	">
+<area shape="circle" coords="0,0,1" alt="Eglinton West 	     “ href=“	Eglinton West 	">
+<area shape="circle" coords="0,0,1" alt="Ellesmere	     “ href=“	Ellesmere	">
+<area shape="circle" coords="0,0,1" alt="Finch 		     “ href=“	Finch 	">
+<area shape="circle" coords="0,0,1" alt="Glencairn	     “ href=“	Glencairn	">
+<area shape="circle" coords="0,0,1" alt="Greenwood	     “ href=“	Greenwood	">
+<area shape="circle" coords="0,0,1" alt="High Park	     “ href=“	High Park	">
+<area shape="circle" coords="0,0,1" alt="Islington	     “ href=“	Islington	">
+<area shape="circle" coords="0,0,1" alt="Jane 		     “ href=“	Jane 	">
+<area shape="circle" coords="0,0,1" alt="Keele		     “ href=“	Keele	">
+<area shape="circle" coords="0,0,1" alt="Kennedy 	     “ href=“	Kennedy 	">
+<area shape="circle" coords="0,0,1" alt="King		     “ href=“	King	">
+<area shape="circle" coords="0,0,1" alt="Kipling 	     “ href=“	Kipling 	">
+<area shape="circle" coords="0,0,1" alt="Lansdowne	     “ href=“	Lansdowne	">
+<area shape="circle" coords="0,0,1" alt="Lawrence	     “ href=“	Lawrence	">
+<area shape="circle" coords="0,0,1" alt="Lawrence East	     “ href=“	Lawrence East	">
+<area shape="circle" coords="0,0,1" alt="Lawrence West      “ href=“Lawrence West 	">
+<area shape="circle" coords="0,0,1" alt="Leslie 		     “ href=“	Leslie 	">
+<area shape="circle" coords="0,0,1" alt="Main Street 	     “ href=“	Main Street 	">
+<area shape="circle" coords="0,0,1" alt="McCowan	     “ href=“	McCowan	">
+<area shape="circle" coords="0,0,1" alt="Midland	     “ href=“	Midland	">
+<area shape="circle" coords="0,0,1" alt="Museum	     “ href=“	Museum	">
+<area shape="circle" coords="0,0,1" alt="North York Centre      “ href=“North York Centre 	">
+<area shape="circle" coords="0,0,1" alt="Old Mill	     “ href=“	Old Mill	">
+<area shape="circle" coords="0,0,1" alt="Osgoode 	     “ href=“	Osgoode 	">
+<area shape="circle" coords="0,0,1" alt="Ossington	     “ href=“	Ossington	">
+<area shape="circle" coords="0,0,1" alt="Pape 		     “ href=“	Pape 	">
+<area shape="circle" coords="0,0,1" alt="Queen 	     “ href=“	Queen 	">
+<area shape="circle" coords="0,0,1" alt="Queen's Park 	     “ href=“	Queen's Park 	">
+<area shape="circle" coords="0,0,1" alt="Rosedale	     “ href=“	Rosedale	">
+<area shape="circle" coords="0,0,1" alt="Royal York	     “ href=“	Royal York	">
+<area shape="circle" coords="0,0,1" alt="Runnymede	     “ href=“	Runnymede	">
+<area shape="circle" coords="0,0,1" alt="Scarborough Centre 	     “ href=“	Scarborough Centre 	">
+<area shape="circle" coords="0,0,1" alt="Sheppard-Yonge 	     “ href=“	Sheppard-Yonge 	">
+<area shape="circle" coords="0,0,1" alt="Sherbourne	     “ href=“	Sherbourne	">
+<area shape="circle" coords="0,0,1" alt="Spadina	     “ href=“	Spadina	">
+<area shape="circle" coords="0,0,1" alt="St Andrew 	     “ href=“	St Andrew 	">
+<area shape="circle" coords="0,0,1" alt="St Clair 	     “ href=“	St Clair 	">
+<area shape="circle" coords="0,0,1" alt="St Clair West	     “ href=“	St Clair West	">
+<area shape="circle" coords="0,0,1" alt="St George 	     “ href=“	St George 	">
+<area shape="circle" coords="0,0,1" alt="St Patrick	     “ href=“	St Patrick	">
+<area shape="circle" coords="0,0,1" alt="Summerhill	     “ href=“	Summerhill	">
+<area shape="circle" coords="0,0,1" alt="Union		      "href="	Union 	">
+<area shape="circle" coords="0,0,1" alt="Victoria Park 	     “ href=“	Victoria Park 	">
+<area shape="circle" coords="0,0,1" alt="Warden	     “ href=“	Warden	">
+<area shape="circle" coords="0,0,1" alt="Wellesley	     “ href=“	Wellesley	">
+<area shape="circle" coords="0,0,1" alt="Wilson	     “ href=“	Wilson	">
+<area shape="circle" coords="0,0,1" alt="Woodbine	     “ href=“	Woodbine	">
+<area shape="circle" coords="0,0,1" alt="York Mills 	     “ href=“	York Mills 	">
+<area shape="circle" coords="0,0,1" alt="Yorkdale	     “ href=“	Yorkdale	">
+
+</map>
+</body>
+</html>
