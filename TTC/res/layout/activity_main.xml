@@ -1,71 +1,18 @@
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-  
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.ttc.MainActivity" >
+    tools:context="com.example.ttcdelay.MainActivity" >
 
-    <ImageView
-        android:id="@+id/imageView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/logo" />
-
-    <Button
-        android:id="@+id/btnTtc"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/imageView1"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="28dp"
-        android:drawableLeft="@drawable/ttc"
-        android:text="  Subway Map" />
-
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:text="Copyright 2015 - Team Trapezinkov" />
-
-    <Button
-        android:id="@+id/btnStn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnTtc"
-        android:layout_alignRight="@+id/btnTtc"
-        android:layout_below="@+id/btnTtc"
-        android:layout_marginTop="18dp"
-        android:drawableLeft="@drawable/station"
-        android:text="  Station List" />
-
-    <Button
-        android:id="@+id/btnSettings"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnStn"
-        android:layout_alignRight="@+id/btnTtc"
-        android:layout_below="@+id/btnStn"
-        android:layout_marginTop="14dp"
-        android:drawableLeft="@drawable/settings"
-        android:text="  Settings" />
-
-    <Button
-        android:id="@+id/btnAbout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/btnSettings"
-        android:layout_alignRight="@+id/btnSettings"
-        android:layout_below="@+id/btnSettings"
-        android:layout_marginTop="16dp"
-        android:drawableLeft="@drawable/about"
-        android:text="  About Us" />
-
+ <WebView  
+    android:id="@+id/webview"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+/>
+ 
 </RelativeLayout>
