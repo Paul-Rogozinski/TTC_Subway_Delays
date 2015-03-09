@@ -25,8 +25,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="28dp"
         android:drawableLeft="@drawable/ttc"
-        android:text="  Subway Map" />
+        android:text="  Subway Map" 
+        />
 
+     
+     
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
