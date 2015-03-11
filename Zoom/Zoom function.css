@@ -1,0 +1,14 @@
+body
+{
+
+}
+
+img
+{
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	width: 100%; 
+	cursor: pointer;
+        transition: -webkit-transform 0.1s ease
+}
