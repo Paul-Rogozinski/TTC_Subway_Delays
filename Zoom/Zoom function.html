@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="StyleSheet.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    
+	$("#zoomin").click(function()
+	{
+		var width=$("#ttcMap").width()*2;
+		var height=$("#ttcMap").height()*2;
+		$("#ttcMap").width(width);
+		$("#ttcMap").height(height);
+		
+	});
+	$("#zoomout").click(function()
+	{
+		var width=$("#ttcMap").width()*0.5;
+		var height=$("#ttcMap").height()*0.5;
+		$("#ttcMap").width(width);
+		$("#ttcMap").height(height);
+		
+	});
+	
+    
+});
+</script>
