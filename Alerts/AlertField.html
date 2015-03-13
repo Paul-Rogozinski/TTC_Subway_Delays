@@ -1,0 +1,37 @@
+<body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".stationStop").click(function(e){
+	 var offset = $(this).attr("coords").split(",");
+	var statName=$(this).attr("alt");
+        $("#stationDetailsBox").show().css("left",offset[0]+'px').css("top",offset[1]+'px');
+		$("#stationDetailsBox").css("zIndex","1");
+		$("#stationDetailsBox #stationName").html(statName);
+    });
+	$("#closeIcon").click(function(){
+		$("#stationDetailsBox").hide();
+		$("#stationInfo").val("");
+	});
+	$("#postInfoButton").click(function(){
+		
+		alert($("#stationInfo").val());
+		$("#stationDetailsBox").hide();
+		$("#stationInfo").val("");
+	});
+});
+</script>
+<p>
+
+<div id="stationDetailsBox" style="display:none;position:absolute;left:35%;top:35%;border:5px solid Aqua;background-color:white;font-size: 30pt; width: 550px; height: 400px">
+
+<button id="closeIcon" style="float:right;font-size: 30pt">X</button>
+
+<span style="color:blue; font-size: 30pt">Station: </span><span style="color:blue;font-size: 30pt" id="stationName"></span>
+<br/>
+<span>Station Info:</span>
+<br/>
+<textarea id="stationInfo" style="font-size: 30pt; width: 520px; height: 200px" rows="10"></textarea><br/>
+<button id="postInfoButton" style="float:right;font:sans-serif;font-size: 35pt; color:Red; background-color:#ccc;-moz-border-radius: 25px;
+ -webkit-border-radius: 25px;border: 7px solid black;padding: 7px;width: 150px; height: 80px">Post</button>
+</div>
