@@ -6,7 +6,7 @@ for="window" event="onload">
 
 var xmlDoc = new ActiveXObject("Microsoft.XMLDOM")
 xmlDoc.async="false"
-xmlDoc.load("note.xml")
+xmlDoc.load("sample_activity.xml")
 nodes = xmlDoc.documentElement.childNodes
 to.innerText = nodes.item(0).text
 from.innerText = nodes.item(1).text
