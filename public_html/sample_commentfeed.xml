@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<commentFeed>
+
+<userMessage>
+<stationID>1</stationID>
+<timestamp>1426340239</timestamp>
+<username>Joe</username>
+<messageContent>How long this time?</messageContent>
+</userMessage>
+
+<userMessage>
+<stationID>2</stationID>
+<timestamp>1426342239</timestamp>
+<username>Bob/username>
+<messageContent>Again?</messageContent>
+</userMessage>
+
+<userMessage>
+<stationID>3</stationID>
+<timestamp>1426344239</timestamp>
+<username>Smith</username>
+<messageContent>They've got to fix this</messageContent>
+</userMessage>
+
+<userMessage>
+<stationID>1</stationID>
+<timestamp>1426346239</timestamp>
+<username>Mary</username>
+<messageContent>Late again for work then... thanks TTC</messageContent>
+</userMessage>
+
+
+
+</commentFeed>
