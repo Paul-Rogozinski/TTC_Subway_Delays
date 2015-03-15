@@ -1,0 +1,127 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+</head>
+<title>TTC Subway Map</title>
+
+<body>
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".stationStop").click(function(e){
+	 var offset = $(this).attr("coords").split(",");
+    
+	var statName=$(this).attr("alt");
+        $("#stationDetailsBox").show().css("left",offset[0]+'px').css("top",offset[1]+'px');
+		$("#stationDetailsBox").css("zIndex","1");
+		$("#stationDetailsBox #stationName").html(statName);
+		
+    });
+	$("#closeIcon").click(function(){
+		$("#stationDetailsBox").hide();
+		$("#stationInfo").val("");
+	});
+	$("#postInfoButton").click(function(){
+		
+		alert($("#stationInfo").val());
+		
+		
+		$("#stationDetailsBox").hide();
+		$("#stationInfo").val("");
+	});
+});
+</script>
+<p>
+
+<div id="stationDetailsBox" style="display:none;position:absolute;left:35%;top:35%;border:5px solid Aqua;background-color:white;font-size: 30pt; width: 550px; height: 400px">
+
+<button id="closeIcon" style="float:right;font-size: 30pt">X</button>
+
+<span style="color:blue; font-size: 30pt">Station: </span><span style="color:blue;font-size: 30pt" id="stationName"></span>
+<br/>
+<span>Station Info:</span>
+<br/>
+<textarea id="stationInfo" style="font-size: 30pt; width: 520px; height: 200px" rows="10"></textarea><br/>
+<button id="postInfoButton" style="float:right;font:sans-serif;font-size: 35pt; color:Red; background-color:#ccc;-moz-border-radius: 25px;
+ -webkit-border-radius: 25px;border: 7px solid black;padding: 7px;width: 150px; height: 80px">Post</button>
+</div>
+
+<img src="SubwayMap.png" alt="" id="ttcMap" usemap="#Map" /></a>
+<map name="Map" id="Map">
+<area shape="circle"  coords="2243,1407,8"  alt="Bathurst" class="stationStop"/>
+<area shape="circle"  coords="2690,1407,8"  alt="Bay"  class="stationStop"/>
+<area shape="circle"  coords="3144,306,8"   alt="Bayview" 	    class="stationStop"/>
+<area shape="circle"  coords="3444,306,8"   alt="Bessarion" 	class="stationStop"/>
+<area shape="circle"  coords="2843,1407,8"  alt="Bloor-Yonge" class="stationStop"/>
+<area shape="circle"  coords="3291,1407,8"  alt="Broadview" class="stationStop"/>
+<area shape="circle"  coords="3144,1407,8"  alt="Castle Frank" class="stationStop"/>
+<area shape="circle"  coords="3442,1407,8"  alt="Chester" class="stationStop"/>
+<area shape="circle"  coords="2093,1407,8"  alt="Christie" class="stationStop"/>
+<area shape="circle"  coords="2844,1706,8"  alt="College" class="stationStop"/>
+<area shape="circle"  coords="4042,1407,8"  alt="Coxwell" class="stationStop"/>
+<area shape="circle"  coords="2842,1006,8"  alt="Davisville" class="stationStop"/>
+<area shape="circle"  coords="4042,306,8"   alt="Don Mills" class="stationStop"/>
+<area shape="circle"  coords="3754,1407,8"  alt="Donlands" class="stationStop"/>
+<area shape="circle"  coords="2092,308,8"   alt="Downsview" class="stationStop"/>
+<area shape="circle"  coords="1792,1407,8"  alt="Dufferin" class="stationStop"/>
+<area shape="circle"  coords="2842,1858,8"  alt="Dundas" class="stationStop"/>
+<area shape="circle"  coords="1492,1407,8"  alt="Dundas West" class="stationStop"/>
+<area shape="circle"  coords="2392,1206,8"  alt="Dupont" class="stationStop"/>
+<area shape="circle"  coords="2844,908,8"   alt="Eglinton" class="stationStop"/>
+<area shape="circle"  coords="2092,908,8"   alt="Eglinton West" class="stationStop"/>
+<area shape="circle"  coords="4812,506,8"   alt="Ellesmere" 	class="stationStop"/>
+<area shape="circle"  coords="2844,106,8"   alt="Finch" class="stationStop"/>
+<area shape="circle"  coords="2092,808,8"   alt="Glencairn" class="stationStop"/>
+<area shape="circle"  coords="3894,1407,8"  alt="Greenwood" class="stationStop"/>
+<area shape="circle"  coords="1192,1407,8"  alt="High Park" class="stationStop"/>
+<area shape="circle"  coords="441,1407,8"   alt="Islington" class="stationStop"/>
+<area shape="circle"  coords="894,1407,8"   alt="Jane" class="stationStop"/>
+<area shape="circle"  coords="1342,1407,8"  alt="Keele" class="stationStop"/>
+<area shape="circle"  coords="4790,906,8"   alt="Kennedy" class="stationStop"/>
+<area shape="circle"  coords="2844,2158,8"  alt="King" class="stationStop"/>
+<area shape="circle"  coords="291,1455,8"   alt="Kipling" class="stationStop"/>
+<area shape="circle"  coords="1642,1407,8"  alt="Lansdowne" class="stationStop"/>
+<area shape="circle"  coords="2844,706,8"   alt="Lawrence"              class="stationStop"/>
+
+<area shape="circle"  coords="2092,708,8"   alt="Lawrence East"        class="stationStop"/>
+
+<area shape="circle"  coords="2092,708,8"   alt="Lawrence West"         class="stationStop"/>
+<area shape="circle"  coords="3744,308,8"   alt="Leslie"                class="stationStop"/>
+<area shape="circle"  coords="4342,1407,8"  alt="Main Street"          class="stationStop"/>
+<area shape="circle"  coords="5182,456,8"   alt="McCowan"               class="stationStop"/>
+<area shape="circle"  coords="4882,456,8"   alt="Midland"               class="stationStop"/>
+<area shape="circle"  coords="2544,1556,8"  alt="Museum"               class="stationStop"/>
+<area shape="circle"  coords="2844,206,8"   alt="North York Centre"     class="stationStop"/>
+<area shape="circle"  coords="744,1407,8"   alt="Old Mill"              class="stationStop"/>
+<area shape="circle"  coords="2542,2008,8"  alt="Osgoode"               class="stationStop"/>
+<area shape="circle"  coords="1942,1407,8"  alt="Ossington"             class="stationStop"/>
+<area shape="circle"  coords="3592,1407,8"  alt="Pape"                  class="stationStop"/>
+<area shape="circle"  coords="2842,2006,8"  alt="Queen"                 class="stationStop"/>
+<area shape="circle"  coords="2542,1706,8"  alt="Queen's Park"         class="stationStop"/>
+<area shape="circle"  coords="2844,1308,8"  alt="Rosedale"              class="stationStop"/>
+<area shape="circle"  coords="591,1413,8"   alt="Royal York"            class="stationStop"/>
+<area shape="circle"  coords="1045,1407,8"  alt="Runnymede"             class="stationStop"/>
+<area shape="circle"  coords="5032,456,8"   alt="Scarborough Centre"    class="stationStop"/>
+<area shape="circle"  coords="2844,310,8"   alt="Sheppard-Yonge"       class="stationStop"/>
+<area shape="circle"  coords="2993,1407,8"  alt="Sherbourne"           class="stationStop"/>
+<area shape="circle"  coords="2393,1407,8"  alt="Spadina"              class="stationStop"/>
+<area shape="circle"  coords="2393,1356,8"  alt="Spadina St.G"         class="stationStop"/>
+<area shape="circle"  coords="2544,2156,8"  alt="St Andrew"             class="stationStop"/>
+<area shape="circle"  coords="2842,1106,8"  alt="St Clair"              class="stationStop"/>
+<area shape="circle"  coords="2392,1106,8"  alt="St Clair West"         class="stationStop"/>
+<area shape="circle"  coords="2543,1407,8"  alt="St George"             class="stationStop"/>
+<area shape="circle"  coords="2544,1856,8"  alt="St Patrick"            class="stationStop"/>
+<area shape="circle"  coords="2844,1206,8"  alt="Summerhill"            class="stationStop"/>
+<area shape="circle"  coords="2692,2226,8"  alt="Union"                 class="stationStop"/>
+<area shape="circle"  coords="4492,1356,8"  alt="Victoria Park"         class="stationStop"/>
+<area shape="circle"  coords="4644,1106,8"  alt="Warden"                class="stationStop"/>
+<area shape="circle"  coords="2844,1556,8"  alt="Wellesley"             class="stationStop"/>
+<area shape="circle"  coords="2092,508,8"   alt="Wilson"                class="stationStop"/>
+<area shape="circle"  coords="4192,1407,8"  alt="Woodbine"              class="stationStop"/>
+<area shape="circle"  coords="2842,506,8"   alt="York Mills"           class="stationStop"/>
+<area shape="circle"  coords="2092,608,8"   alt="Yorkdale"             class="stationStop"/>
+</map>
+</body>
+</html> 
