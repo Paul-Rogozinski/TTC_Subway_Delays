@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta content="en-us" http-equiv="Content-Language">
+<script type="text/javascript">
+<!--
+function FP_swapImg() {//v1.0
+ var doc=document,args=arguments,elm,n; doc.$imgSwaps=new Array(); for(n=2; n<args.length;
+ n+=2) { elm=FP_getObjectByID(args[n]); if(elm) { doc.$imgSwaps[doc.$imgSwaps.length]=elm;
+ elm.$src=elm.src; elm.src=args[n+1]; } }
+}
+
+function FP_preloadImgs() {//v1.0
+ var d=document,a=arguments; if(!d.FP_imgs) d.FP_imgs=new Array();
+ for(var i=0; i<a.length; i++) { d.FP_imgs[i]=new Image; d.FP_imgs[i].src=a[i]; }
+}
+
+function FP_getObjectByID(id,o) {//v1.0
+ var c,el,els,f,m,n; if(!o)o=document; if(o.getElementById) el=o.getElementById(id);
+ else if(o.layers) c=o.layers; else if(o.all) el=o.all[id]; if(el) return el;
+ if(o.id==id || o.name==id) return o; if(o.childNodes) c=o.childNodes; if(c)
+ for(n=0; n<c.length; n++) { el=FP_getObjectByID(id,c[n]); if(el) return el; }
+ f=o.forms; if(f) for(n=0; n<f.length; n++) { els=f[n].elements;
+ for(m=0; m<els.length; m++){ el=FP_getObjectByID(id,els[n]); if(el) return el; } }
+ return null;
+}
+// -->
+</script>
+</head>
+
+<body onload="FP_preloadImgs(/*url*/'Alphabetically default.jpg',/*url*/'Alphabetically press.jpg',/*url*/'Alert default.jpg',/*url*/'Alert press.jpg',/*url*/'Numberdefault.jpg',/*url*/'Number press.jpg')">
+
+<table style="width: 100%">
+	<tr>
+		<td style="width: 58px">Sort By :</td>
+		<td style="width: 106px">
+		<img id="img1" alt="Alphabetically" fp-style="fp-btn: Embossed Capsule 5" fp-title="Alphabetically" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img1',/*url*/'Alphabetically press.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img1',/*url*/'Alphabetically hover.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img1',/*url*/'Alphabetically default.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img1',/*url*/'Alphabetically default.jpg')" src="Alphabetically%20hover.jpg" style="border: 0" width="100"></td>
+		<td style="width: 108px">
+		<img id="img3" alt="Number" fp-style="fp-btn: Embossed Capsule 5" fp-title="Number" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img3',/*url*/'Number press.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img3',/*url*/'Number hover.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img3',/*url*/'Numberdefault.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img3',/*url*/'Numberdefault.jpg')" src="Number%20hover.jpg" style="border: 0" width="100"></td>
+		<td style="width: 859px">
+		<img id="img2" alt="Alert" fp-style="fp-btn: Embossed Capsule 5" fp-title="Alert" height="20" onmousedown="FP_swapImg(1,0,/*id*/'img2',/*url*/'Alert press.jpg')" onmouseout="FP_swapImg(0,0,/*id*/'img2',/*url*/'Alert hover.jpg')" onmouseover="FP_swapImg(1,0,/*id*/'img2',/*url*/'Alert default.jpg')" onmouseup="FP_swapImg(0,0,/*id*/'img2',/*url*/'Alert default.jpg')" src="Alert%20hover.jpg" style="border: 0" width="100"></td>
+	</tr>
+	<tr>
+		<td style="width: 58px">&nbsp;</td>
+		<td style="width: 106px">&nbsp;</td>
+		<td style="width: 108px">&nbsp;</td>
+		<td style="width: 859px">&nbsp;</td>
+	</tr>
+</table>
+
+</body>
+
+</html>
